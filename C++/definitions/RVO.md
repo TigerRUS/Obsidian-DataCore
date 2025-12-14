@@ -5,7 +5,7 @@
 MyClass createObject() {
     MyClass temp; // Создание временного объекта temp
     // ...
-    return temp; // Копирование (или перемещение) temp в возвращаемый объект
+    return temp; // Копирование temp в возвращаемый объект
 }
 
 MyClass obj = createObject(); // Копирование возвращаемого объекта в obj

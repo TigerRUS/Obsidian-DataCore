@@ -1,5 +1,3 @@
-
-**Перебор объектов в цикле for**
 ```c++
 string str = "gjklfkdlgkl";
 for (auto c : str)
