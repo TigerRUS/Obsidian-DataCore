@@ -21,6 +21,12 @@ git commit
 ```
 The `git reset` command is used to undo a `git add`
 
+**git restore**
+The `git restore` command is used to *undo uncommitted changes* in your working directory or staging area
+```
+git restore --staged .
+```
+
 **git push**
 `git push <remote> <branch>`
 Push the specified branch to , along with all of the necessary commits and internal objects. This creates a local branch in the destination repository.
