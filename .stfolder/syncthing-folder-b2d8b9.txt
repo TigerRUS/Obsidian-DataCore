@@ -1,5 +1,0 @@
-# This directory is a Syncthing folder marker.
-# Do not delete.
-
-folderID: DataCore
-created: 2024-10-22T21:42:27+05:00
