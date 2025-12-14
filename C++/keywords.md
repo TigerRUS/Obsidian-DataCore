@@ -2,7 +2,7 @@ https://en.cppreference.com/w/cpp/keywords.html
 
 https://learn.microsoft.com/en-us/cpp/cpp/keywords-cpp?view=msvc-180
 
-| **Data Types**            | `bool`, `char`, `char8_t`, `char16_t`, `char32_t`, `int`, `long`, `short`, `signed`, `unsigned`, `float`, `double`, `void`, `wchar_t`              |
+| **Data Types**            | `bool`, `char`,`size_t`, `char8_t`, `char16_t`, `char32_t`, `int`, `long`, `short`, `signed`, `unsigned`, `float`, `double`, `void`, `wchar_t`     |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Control Flow**          | `if`, `else`, `switch`, `case`, `default`, `for`, `while`, `do`, `break`, `continue`, `goto`                                                       |
 | **Storage & Specifiers**  | `auto`, `const`, `constexpr`, `consteval`, `constinit`, `extern`, `inline`, `mutable`, `register`, `static`, `thread_local`, `virtual`, `volatile` |
