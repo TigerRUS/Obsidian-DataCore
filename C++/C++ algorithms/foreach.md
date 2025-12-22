@@ -1,9 +1,24 @@
 ```c++
-string str = "gjklfkdlgkl";
-for (auto c : str)
-    cout << c;
+#include <string>
+#include <iostream>
 
-St arr[]{ {"tt", 3}, {"g", 56} };
-for (auto c : arr)
-    cout << c.name << " " << c.age << endl;
+struct Student
+{
+	std::string name = "";
+	int age = 0;
+};
+
+int main()
+{
+	std::string str = "gjklfkdlgkl";
+	for (const auto& c : str) // Используем const и ссылку, чтобы избежать копирования
+		std::cout << c;
+	std::cout << std::endl;
+
+	Student arr[]{ {"Ivan", 3}, {"John", 56} };
+	for (const auto& c : arr)
+		std::cout << c.name << " " << c.age << std::endl;
+
+	return 0;
+}
 ```
