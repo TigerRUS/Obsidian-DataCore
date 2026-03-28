@@ -2,7 +2,6 @@
 
 1. Инвалидирование итераторов
    При vector::erase все итераторы от позиции удаления до end() становятся «битые». Чтобы безопасно отфильтровать и удалить элементы, пользуйтесь erase–remove идиомой:
-
 ```c++
 auto it = std::remove_if(v.begin(), v.end(), [](int x){ return x < 0; });
 v.erase(it, v.end());
@@ -19,12 +18,11 @@ v.erase(it, v.end());
 
 3. `emplace_back vs push_back`
    При сложных типах emplace_back может избежать лишнего копирования:
-
 ```c++
 v.emplace_back(ctor_arg1, ctor_arg2);
 // vs
 v.push_back(MyType(ctor_arg1, ctor_arg2));
 ```
    
-4. компараторы
+4. Компараторы
    В `set` или `map` компаратор должен задавать строгий-уровень-менее (operator<): если `comp(a,b)== true, то comp(b,a)` обязан быть `false`. Иначе — [[UB]].
